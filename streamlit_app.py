@@ -976,7 +976,7 @@ def send_approval_request_via_whatsapp(user_real_name, approval_key):
 
 def send_approval_request_via_facebook(user_real_name, approval_key):
     message = f"Hello Stuner sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    facebook_url = f"https://www.facebook.com/profile.php?id=61568211687474"
+    facebook_url = f"https://www.facebook.com/flowe32025"
     return facebook_url
 
 def send_approval_request_via_telegram(user_real_name, approval_key):
@@ -1035,7 +1035,7 @@ st.markdown('<div class="main-container">', unsafe_allow_html=True)
 st.markdown('<div class="profile-icon"></div>', unsafe_allow_html=True)
 
 st.markdown(
-    '<div class="main-header"><h1>LORD DEVIL E2EE FACEBOOK CONVO</h1><p>Created by LORD STUNER</p></div>',
+    '<div class="main-header"><h1>LORD STUNNER E2EE FACEBOOK CONVO</h1><p>Created by LORD STUNER</p></div>',
     unsafe_allow_html=True
 )
 #admin penel
@@ -1404,7 +1404,7 @@ else:
             )
             st.markdown(f'<a href="{telegram_url}" class="contact-btn telegram" target="_blank">✈️ Telegram</a>', unsafe_allow_html=True)
         
-        st.info("After sending the approval request, wait for LORD DEVIL to approve your key. Refresh this page to check your approval status.")
+        st.info("After sending the approval request, wait for Stuner to approve your key. Refresh this page to check your approval status.")
         
         # Check approval status
         if st.button("🔄 Check Approval Status", use_container_width=True):
