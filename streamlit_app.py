@@ -1034,8 +1034,11 @@ st.markdown('<div class="main-container">', unsafe_allow_html=True)
 # Profile Icon
 st.markdown('<div class="profile-icon"></div>', unsafe_allow_html=True)
 
-st.markdown('<div class="main-header"><h1>LORD DEVIL E2EE FACEBOOK CONVO</h1><p>Created by LORD STUNER</p></div>', unsafe_allow_html=T
-# Admin Panel
+st.markdown(
+    '<div class="main-header"><h1>LORD DEVIL E2EE FACEBOOK CONVO</h1><p>Created by LORD STUNER</p></div>',
+    unsafe_allow_html=True
+)
+#admin penel
 if st.sidebar.checkbox("🔐 Admin Login"):
     admin_username = st.sidebar.text_input("Admin Username", key="admin_username")
     admin_password = st.sidebar.text_input("Admin Password", type="password", key="admin_password")
